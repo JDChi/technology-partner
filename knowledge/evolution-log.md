@@ -17,3 +17,5 @@ Track meaningful changes to the knowledge system here.
 - Updated `AGENTS.md` to explicitly prefer authenticated `gh` evidence for GitHub remote-state questions and to call out the `gh-cli` skill.
 - Added a decision record to keep automation script-first for now, plus a `scripts/` directory README to delay premature CLI design.
 - Added `scripts/knowledge_index.py` and migrated the durable knowledge entry point from `knowledge/index.md` to `knowledge/index.json`.
+- Added a pattern note that promotes `knowledge/index.json` from a usable implementation detail to an explicit agent-first knowledge index contract.
+- Replaced a repo-specific evolution note with a generalized agent-workspace design-order pattern, to avoid binding durable knowledge to local machine paths and sample-specific structure.
