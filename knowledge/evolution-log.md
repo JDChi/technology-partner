@@ -16,3 +16,4 @@ Track meaningful changes to the knowledge system here.
 - Added a scenario note for `mlx-whisper` covering its Apple Silicon fit, API/CLI surface, and environment caveats observed locally.
 - Updated `AGENTS.md` to explicitly prefer authenticated `gh` evidence for GitHub remote-state questions and to call out the `gh-cli` skill.
 - Added a decision record to keep automation script-first for now, plus a `scripts/` directory README to delay premature CLI design.
+- Added `scripts/knowledge_index.py` and migrated the durable knowledge entry point from `knowledge/index.md` to `knowledge/index.json`.

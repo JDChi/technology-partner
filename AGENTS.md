@@ -26,7 +26,7 @@
 4. If the topic depends on GitHub remote state rather than just local files, prefer `gh` and authenticated GitHub evidence over guesses.
 5. Form a recommendation with assumptions, tradeoffs, risks, and suitable scenarios.
 6. Write or update the relevant knowledge file when the result is reusable.
-7. Keep the index and cross-references current so the knowledge remains discoverable.
+7. Keep the machine index and cross-references current so the knowledge remains discoverable.
 
 ## Knowledge Base Rules
 - The `knowledge/` directory is the durable memory of this project.
@@ -85,7 +85,7 @@
 - When writing knowledge, prefer small, incremental updates over broad rewrites unless the structure is clearly broken.
 
 ## Knowledge Map
-- `knowledge/index.md`: entry point for all durable knowledge
+- `knowledge/index.json`: machine-readable entry point for durable knowledge
 - `knowledge/architecture/`: architecture notes and system understanding
 - `knowledge/decisions/`: decision records and rationale
 - `knowledge/patterns/`: reusable patterns, conventions, and heuristics

@@ -18,5 +18,8 @@ This directory is the first automation layer for `technology-partner`.
 - knowledge consistency checks
 - GitHub stars analysis/export helpers
 
+## Current Script
+- `knowledge_index.py`: create new knowledge entries and rebuild `knowledge/index.json`
+
 ## Migration Rule
 - If script count, shared logic, and argument patterns grow enough, promote the proven subset into a real CLI later.

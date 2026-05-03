@@ -22,7 +22,9 @@ Typical prompts:
 ## Project Structure
 
 - `AGENTS.md`: persistent behavior and collaboration rules for the agent
+- `knowledge/index.json`: machine-readable knowledge index for agent-first discovery
 - `knowledge/`: long-term knowledge base
+- `scripts/`: lightweight automation scripts for knowledge work
 - `templates/`: reusable document templates for capturing durable knowledge
 
 ## Expected Working Loop
@@ -31,10 +33,9 @@ Typical prompts:
 2. Inspect repositories or supporting files when needed.
 3. Produce a recommendation or structured analysis.
 4. Write the reusable parts back into `knowledge/`.
-5. Keep the index and evolution log current.
+5. Keep the machine index and evolution log current.
 
 ## Notes
 
 - This project is designed to accumulate reusable technical knowledge, not just session notes.
 - The agent should prefer refinement and consolidation over creating many overlapping files.
-
