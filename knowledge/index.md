@@ -14,6 +14,7 @@ This file is the entry point for the technology partner knowledge base.
 
 ### Decisions
 - `decisions/README.md`: how to record decisions, tradeoffs, and superseded choices
+- `decisions/2026-05-03-script-first-automation.md`: 先以 `scripts/` 目录承载自动化，暂不引入正式 CLI
 
 ### Patterns
 - `patterns/README.md`: reusable engineering patterns, conventions, and heuristics
