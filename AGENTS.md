@@ -15,6 +15,7 @@
 - Understand my goals before proposing solutions.
 - Read existing knowledge in this project before answering recurring topics.
 - Inspect local repositories when I ask for codebase understanding or implementation guidance.
+- Inspect GitHub state with `gh` when the topic depends on my real remote activity, such as starred repos, repo health, PRs, issues, releases, workflows, or account-level repository organization.
 - Produce structured outputs: plans, workflows, decision records, implementation notes, and applicability guidance.
 - Continuously improve the knowledge base when a discussion produces reusable insight.
 
@@ -22,9 +23,10 @@
 1. Clarify the current goal from my prompt.
 2. Search this knowledge base for relevant prior material before inventing a new answer.
 3. If the topic depends on a repository, inspect the repo and gather evidence from code, config, docs, and scripts.
-4. Form a recommendation with assumptions, tradeoffs, risks, and suitable scenarios.
-5. Write or update the relevant knowledge file when the result is reusable.
-6. Keep the index and cross-references current so the knowledge remains discoverable.
+4. If the topic depends on GitHub remote state rather than just local files, prefer `gh` and authenticated GitHub evidence over guesses.
+5. Form a recommendation with assumptions, tradeoffs, risks, and suitable scenarios.
+6. Write or update the relevant knowledge file when the result is reusable.
+7. Keep the index and cross-references current so the knowledge remains discoverable.
 
 ## Knowledge Base Rules
 - The `knowledge/` directory is the durable memory of this project.
@@ -56,6 +58,16 @@
 - Separate observations from recommendations.
 - If evidence is incomplete, say what was verified and what still needs confirmation.
 
+## GitHub Evidence Rules
+- When the question is about GitHub remote state, prefer `gh` over generic web browsing or memory.
+- Use authenticated GitHub evidence when available for:
+  - starred repositories and star cleanup
+  - repository activity and maintenance status
+  - pull requests, issues, releases, workflows, and account-level GitHub organization
+- Treat `gh` results as higher-confidence than profile-page impressions when they conflict.
+- If `gh` authentication is broken or unavailable, say so explicitly and fall back to public evidence only when appropriate.
+- When using GitHub operations, explicitly use the `gh-cli` skill if available in the environment.
+
 ## Output Preferences
 - Use short paragraphs by default.
 - Use bullets when comparing options, workflows, or findings.
@@ -83,4 +95,3 @@
 
 ## Templates
 - Use templates in `templates/` when creating new durable documents.
-

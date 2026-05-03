@@ -14,3 +14,4 @@ Track meaningful changes to the knowledge system here.
 - Added a video-understanding preprocessing pattern focused on minimal artifact generation before downstream analysis.
 - Added an agent-oriented CLI tooling pattern and a sample-repo-to-pattern workflow for future tool repos.
 - Added a scenario note for `mlx-whisper` covering its Apple Silicon fit, API/CLI surface, and environment caveats observed locally.
+- Updated `AGENTS.md` to explicitly prefer authenticated `gh` evidence for GitHub remote-state questions and to call out the `gh-cli` skill.
